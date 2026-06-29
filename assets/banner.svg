@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1280" height="300" viewBox="0 0 1280 300"
+     xmlns="http://www.w3.org/2000/svg">
+
+  <defs>
+
+    <!-- ── BACKGROUND GRADIENT ── -->
+    <linearGradient id="bgGrad" x1="0" y1="0" x2="1" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0%"   stop-color="#040411"/>
+      <stop offset="50%"  stop-color="#08081c"/>
+      <stop offset="100%" stop-color="#050516"/>
+    </linearGradient>
+
+    <!-- ── SCAN BEAM GRADIENT ── -->
+    <linearGradient id="beamGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%"   stop-color="#00f0ff" stop-opacity="0"/>
+      <stop offset="50%"  stop-color="#00f0ff" stop-opacity="0.09"/>
+      <stop offset="100%" stop-color="#00f0ff" stop-opacity="0"/>
+    </linearGradient>
+
+    <!-- ── CYAN NEON GLOW ── -->
+    <filter id="glowCyan" x="-22%" y="-70%" width="144%" height="240%">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="b1"/>
+      <feGaussianBlur in="SourceGraphic" stdDeviation="22" result="b2"/>
+      <feMerge>
+        <feMergeNode in="b2"/>
+        <feMergeNode in="b1"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <!-- ── PINK NEON GLOW ── -->
+    <filter id="glowPink" x="-15%" y="-60%" width="130%" height="220%">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="5" result="b"/>
+      <feMerge>
+        <feMergeNode in="b"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <!-- ── PURPLE GLOW ── -->
+    <filter id="glowPurple" x="-10%" y="-60%" width="120%" height="220%">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="4" result="b"/>
+      <feMerge>
+        <feMergeNode in="b"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <!-- ── CIRCUIT GRID PATTERN ── -->
+    <pattern id="grid" width="64" height="64" patternUnits="userSpaceOnUse">
+      <path d="M64 0 L0 0 0 64" fill="none" stroke="#00f0ff" stroke-width="0.3" opacity="0.11"/>
+      <circle cx="0"  cy="0"  r="1.1" fill="#00f0ff" opacity="0.20"/>
+      <circle cx="32" cy="32" r="0.9" fill="#7b2fff" opacity="0.24"/>
+    </pattern>
+
+    <!-- ── SCANLINE PATTERN ── -->
+    <pattern id="scanlines" width="1" height="4" patternUnits="userSpaceOnUse">
+      <rect width="1280" height="2" fill="#000000" opacity="0.17"/>
+    </pattern>
+
+    <!-- ── CLIP PATH ── -->
+    <clipPath id="clip">
+      <rect width="1280" height="300"/>
+    </clipPath>
+
+  </defs>
+
+  <!-- ══════════════════════════════════════════════════════ -->
+  <!--  L1 · BACKGROUND                                      -->
+  <!-- ══════════════════════════════════════════════════════ -->
+  <rect width="1280" height="300" fill="url(#bgGrad)"/>
+
+  <!-- ══════════════════════════════════════════════════════ -->
+  <!--  L2 · CIRCUIT GRID                                    -->
+  <!-- ══════════════════════════════════════════════════════ -->
+  <rect width="1280" height="300" fill="url(#grid)"/>
+
+  <!-- ══════════════════════════════════════════════════════ -->
+  <!--  L3 · BORDER EDGES                                    -->
+  <!-- ══════════════════════════════════════════════════════ -->
+  <rect x="0"    y="0"     width="2"    height="300" fill="#00f0ff" opacity="0.65"/>
+  <rect x="1278" y="0"     width="2"    height="300" fill="#00f0ff" opacity="0.65"/>
+  <rect x="0"    y="0"     width="1280" height="1.5" fill="#00f0ff" opacity="0.45"/>
+  <rect x="0"    y="298.5" width="1280" height="1.5" fill="#00f0ff" opacity="0.45"/>
+
+  <!-- ══════════════════════════════════════════════════════ -->
+  <!--  L4 · INNER HORIZONTAL RULES + TICK MARKS             -->
+  <!-- ══════════════════════════════════════════════════════ -->
+  <line x1="90"  y1="62"  x2="1190" y2="62"  stroke="#00f0ff" stroke-width="0.5" opacity="0.20"/>
+  <line x1="90"  y1="240" x2="1190" y2="240" stroke="#00f0ff" stroke-width="0.5" opacity="0.20"/>
+
+  <!-- Top ticks -->
+  <g stroke="#00f0ff" stroke-width="0.6" opacity="0.22">
+    <line x1="200"  y1="58" x2="200"  y2="67"/>
+    <line x1="400"  y1="58" x2="400"  y2="67"/>
+    <line x1="640"  y1="56" x2="640"  y2="67"/>
+    <line x1="880"  y1="58" x2="880"  y2="67"/>
+    <line x1="1080" y1="58" x2="1080" y2="67"/>
+  </g>
+  <!-- Bottom ticks -->
+  <g stroke="#00f0ff" stroke-width="0.6" opacity="0.22">
+    <line x1="200"  y1="233" x2="200"  y2="242"/>
+    <line x1="400"  y1="233" x2="400"  y2="242"/>
+    <line x1="640"  y1="233" x2="640"  y2="244"/>
+    <line x1="880"  y1="233" x2="880"  y2="242"/>
+    <line x1="1080" y1="233" x2="1080" y2="242"/>
+  </g>
+
+  <!-- ══════════════════════════════════════════════════════ -->
+  <!--  L5 · CORNER BRACKETS                                 -->
+  <!-- ══════════════════════════════════════════════════════ -->
+  <path d="M12,12 L74,12 M12,12 L12,74" stroke="#00f0ff" stroke-width="1.8" fill="none"/>
+  <path d="M1268,12 L1206,12 M1268,12 L1268,74" stroke="#00f0ff" stroke-width="1.8" fill="none"/>
+  <path d="M12,288 L74,288 M12,288 L12,226" stroke="#00f0ff" stroke-width="1.8" fill="none"/>
+  <path d="M1268,288 L1206,288 M1268,288 L1268,226" stroke="#00f0ff" stroke-width="1.8" fill="none"/>
+
+  <!-- ══════════════════════════════════════════════════════ -->
+  <!--  L6 · CORNER DOTS · PULSING                          -->
+  <!-- ══════════════════════════════════════════════════════ -->
+  <circle cx="12"   cy="12"  r="3.5" fill="#00f0ff">
+    <animate attributeName="opacity" values="1;0.20;1" dur="2s" begin="0s"   repeatCount="indefinite"/>
+  </circle>
+  <circle cx="1268" cy="12"  r="3.5" fill="#00f0ff">
+    <animate attributeName="opacity" values="1;0.20;1" dur="2s" begin="0.5s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="12"   cy="288" r="3.5" fill="#00f0ff">
+    <animate attributeName="opacity" values="1;0.20;1" dur="2s" begin="1.0s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="1268" cy="288" r="3.5" fill="#00f0ff">
+    <animate attributeName="opacity" values="1;0.20;1" dur="2s" begin="1.5s" repeatCount="indefinite"/>
+  </circle>
+
+  <!-- ══════════════════════════════════════════════════════ -->
+  <!--  L7 · SIDE PIP DECORATIONS                           -->
+  <!-- ══════════════════════════════════════════════════════ -->
+  <!-- Left pip -->
+  <line x1="76" y1="88" x2="76" y2="212" stroke="#00f0ff" stroke-width="0.8" opacity="0.28"/>
+  <circle cx="76" cy="150" r="5.5" fill="none" stroke="#00f0ff" stroke-width="1.0" opacity="0.40"/>
+  <circle cx="76" cy="150" r="2.5" fill="#00f0ff">
+    <animate attributeName="opacity" values="0.55;0.08;0.55" dur="1.5s" begin="0s"     repeatCount="indefinite"/>
+  </circle>
+  <!-- Right pip -->
+  <line x1="1204" y1="88" x2="1204" y2="212" stroke="#00f0ff" stroke-width="0.8" opacity="0.28"/>
+  <circle cx="1204" cy="150" r="5.5" fill="none" stroke="#00f0ff" stroke-width="1.0" opacity="0.40"/>
+  <circle cx="1204" cy="150" r="2.5" fill="#00f0ff">
+    <animate attributeName="opacity" values="0.55;0.08;0.55" dur="1.5s" begin="0.75s" repeatCount="indefinite"/>
+  </circle>
+
+  <!-- ══════════════════════════════════════════════════════ -->
+  <!--  L8 · GLITCH LAYERS  (fire every ~10s)               -->
+  <!-- ══════════════════════════════════════════════════════ -->
+
+  <!-- Cyan +5px right -->
+  <text x="640" y="155" text-anchor="middle"
+        font-family="'Courier New', Courier, monospace" font-size="72" font-weight="bold"
+        letter-spacing="8" fill="#00efff" opacity="0">
+    PROJECT ASTERIA
+    <animate attributeName="opacity"
+      values="0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0.55;0.20;0;0"
+      dur="10s" repeatCount="indefinite" calcMode="discrete"/>
+    <animateTransform attributeName="transform" type="translate" additive="sum"
+      values="0,0;0,0;0,0;0,0;0,0;0,0;0,0;0,0;0,0;0,0;0,0;0,0;0,0;0,0;0,0;0,0;5,0;5,0;0,0;0,0"
+      dur="10s" repeatCount="indefinite" calcMode="discrete"/>
+  </text>
+
+  <!-- Pink −4px left -->
+  <text x="640" y="155" text-anchor="middle"
+        font-family="'Courier New', Courier, monospace" font-size="72" font-weight="bold"
+        letter-spacing="8" fill="#ff0080" opacity="0">
+    PROJECT ASTERIA
+    <animate attributeName="opacity"
+      values="0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0.38;0.12;0"
+      dur="10s" repeatCount="indefinite" calcMode="discrete"/>
+    <animateTransform attributeName="transform" type="translate" additive="sum"
+      values="0,0;0,0;0,0;0,0;0,0;0,0;0,0;0,0;0,0;0,0;0,0;0,0;0,0;0,0;0,0;0,0;0,0;-4,0;-4,0;0,0"
+      dur="10s" repeatCount="indefinite" calcMode="discrete"/>
+  </text>
+
+  <!-- ══════════════════════════════════════════════════════ -->
+  <!--  L9 · TITLE HALO LAYER                               -->
+  <!-- ══════════════════════════════════════════════════════ -->
+  <text x="640" y="155" text-anchor="middle"
+        font-family="'Courier New', Courier, monospace" font-size="72" font-weight="bold"
+        letter-spacing="8" fill="#00f0ff" opacity="0.16" filter="url(#glowCyan)">
+    PROJECT ASTERIA
+  </text>
+
+  <!-- ══════════════════════════════════════════════════════ -->
+  <!--  L10 · MAIN TITLE · BREATHING PULSE                  -->
+  <!-- ══════════════════════════════════════════════════════ -->
+  <text x="640" y="155" text-anchor="middle"
+        font-family="'Courier New', Courier, monospace" font-size="72" font-weight="bold"
+        letter-spacing="8" fill="#00f0ff" filter="url(#glowCyan)">
+    PROJECT ASTERIA
+    <animate attributeName="opacity" values="1;0.87;0.96;1;0.91;0.97;1" dur="5s" repeatCount="indefinite"/>
+  </text>
+
+  <!-- ══════════════════════════════════════════════════════ -->
+  <!--  L11 · SUBTITLE RULE DECORATORS                      -->
+  <!-- ══════════════════════════════════════════════════════ -->
+  <line x1="168" y1="186" x2="298" y2="186" stroke="#ff0080" stroke-width="0.8" opacity="0.60"/>
+  <circle cx="298" cy="186" r="2.5" fill="#ff0080" opacity="0.88"/>
+  <line x1="982" y1="186" x2="1112" y2="186" stroke="#ff0080" stroke-width="0.8" opacity="0.60"/>
+  <circle cx="982" cy="186" r="2.5" fill="#ff0080" opacity="0.88"/>
+
+  <!-- ══════════════════════════════════════════════════════ -->
+  <!--  L12 · SUBTITLE                                      -->
+  <!-- ══════════════════════════════════════════════════════ -->
+  <text x="640" y="193" text-anchor="middle"
+        font-family="'Courier New', Courier, monospace" font-size="13"
+        letter-spacing="4" fill="#ff0080" filter="url(#glowPink)">
+    GROUND ZERO  //  AI RESEARCHER  //  BUILDING IN PUBLIC
+  </text>
+
+  <!-- ══════════════════════════════════════════════════════ -->
+  <!--  L13 · PHASE INDICATOR                               -->
+  <!-- ══════════════════════════════════════════════════════ -->
+  <text x="640" y="226" text-anchor="middle"
+        font-family="'Courier New', Courier, monospace" font-size="11"
+        letter-spacing="4" fill="#7b2fff" filter="url(#glowPurple)">
+    ◈  PHASE I: FOUNDATIONS  ·  ACTIVE  ◈
+  </text>
+
+  <!-- ══════════════════════════════════════════════════════ -->
+  <!--  L14 · OPERATOR FOOTER LINE                          -->
+  <!-- ══════════════════════════════════════════════════════ -->
+  <text x="640" y="260" text-anchor="middle"
+        font-family="'Courier New', Courier, monospace" font-size="10"
+        letter-spacing="2.5" fill="#00f0ff" opacity="0.36">
+    OPERATOR: SREEJIT  //  ogMaverick12  |  MISSION: PERMANENT
+  </text>
+
+  <!-- ══════════════════════════════════════════════════════ -->
+  <!--  L15 · SCANLINES OVERLAY                             -->
+  <!-- ══════════════════════════════════════════════════════ -->
+  <rect width="1280" height="300" fill="url(#scanlines)"/>
+
+  <!-- ══════════════════════════════════════════════════════ -->
+  <!--  L16 · ANIMATED SCAN BEAM                            -->
+  <!-- ══════════════════════════════════════════════════════ -->
+  <g clip-path="url(#clip)">
+    <rect x="0" y="-60" width="1280" height="60" fill="url(#beamGrad)">
+      <animateTransform attributeName="transform" type="translate"
+        from="0,0" to="0,360" dur="5s" repeatCount="indefinite"/>
+    </rect>
+  </g>
+
+</svg>
