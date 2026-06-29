@@ -15,14 +15,14 @@
 ```
   ╔══════════════════════════════════════════════════════════════════╗
   ║                                                                  ║
-  ║    ◈  P R O J E C T   A S T E R I A  ◈                        ║
+  ║    ◈  P R O J E C T   A S T E R I A  ◈                          ║
   ║                                                                  ║
   ║    Named after Asteria — Titan goddess of falling stars.         ║
   ║    Every commit is a star planted in a future I'm building.      ║
   ║                                                                  ║
-  ║    OPERATOR  ▸  Sreejit // ogMaverick12                         ║
-  ║    MISSION   ▸  Class XI → AI Researcher                        ║
-  ║    VECTOR    ▸  Math · CS · ML · DL · Research                  ║
+  ║    OPERATOR  ▸  Sreejit // ogMaverick12                          ║
+  ║    MISSION   ▸  Class XI → AI Researcher                         ║
+  ║    VECTOR    ▸  Math · CS · ML · DL · Research                   ║
   ║    STATUS    ▸  ACTIVE // PHASE I: FOUNDATIONS                   ║
   ║                                                                  ║
   ╚══════════════════════════════════════════════════════════════════╝
@@ -58,19 +58,19 @@ Every note, failed experiment, annotated paper, and shipped project lives here. 
 
 ```
   ╔══════════════════════════════════════════════════════════════════╗
-  ║  SYSTEM MONITOR // PROJECT ASTERIA // LIVE READOUT              ║
+  ║  SYSTEM MONITOR // PROJECT ASTERIA // LIVE READOUT               ║
   ╠══════════════════════════════════════════════════════════════════╣
   ║                                                                  ║
-  ║  CURRENT PHASE   ▸  Phase I — Foundations                       ║
-  ║  ACTIVE TRACKS   ▸  Mathematics / Python / CS Theory            ║
-  ║  SIDE OPS        ▸  JEE Prep · SAT Prep · NUS Application       ║
-  ║  SHIPPED WORK    ▸  SoilSense AI · PrepPilot · PathForge AI     ║
-  ║                     CarbonSense · repurpose.studio              ║
-  ║  CERTIFICATIONS  ▸  21+ Google Cloud Badges                     ║
+  ║  CURRENT PHASE   ▸  Phase I — Foundations                        ║
+  ║  ACTIVE TRACKS   ▸  Mathematics / Python / CS Theory             ║
+  ║  SIDE OPS        ▸  JEE Prep · SAT Prep · NUS Application        ║
+  ║  SHIPPED WORK    ▸  SoilSense AI · PrepPilot · PathForge AI      ║
+  ║                     CarbonSense · repurpose.studio               ║
+  ║  CERTIFICATIONS  ▸  21+ Google Cloud Badges                      ║
   ║                                                                  ║
-  ║  AMBITION LEVEL  ▸  ████████████████████  CRITICAL              ║
-  ║  SIGNAL CLARITY  ▸  █████████████░░░░░░░  STRENGTHENING         ║
-  ║  MOMENTUM        ▸  ████████████████░░░░  HIGH                  ║
+  ║  AMBITION LEVEL  ▸  ████████████████████  CRITICAL               ║
+  ║  SIGNAL CLARITY  ▸  █████████████░░░░░░░  STRENGTHENING          ║
+  ║  MOMENTUM        ▸  ████████████████░░░░  HIGH                   ║
   ║                                                                  ║
   ╚══════════════════════════════════════════════════════════════════╝
 ```
