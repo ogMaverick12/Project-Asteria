@@ -1,12 +1,12 @@
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=glitch&height=280&color=gradient&customColorList=12,16,19,22&text=PROJECT%20ASTERIA&fontColor=00f0ff&fontSize=70&animation=twinkling&desc=GROUND%20ZERO%20%2F%2F%20AI%20RESEARCHER%20%2F%2F%20BUILDING%20IN%20PUBLIC&descColor=ff0080&descAlignY=72&descSize=18&stroke=7b2fff&strokeWidth=2" width="100%" alt="Project Asteria Banner" />
+<img src="./assets/banner.svg" width="100%" alt="Project Asteria Banner" />
 
 </div>
 
 <div align="center">
 
-<img src="https://readme-typing-svg.demolab.com?font=Share+Tech+Mono&size=16&pause=1200&color=00F0FF&background=00000000&center=true&vCenter=true&width=700&height=45&lines=%3E%3E+Booting+Project+Asteria+v1.0.0...;%3E%3E+Subject%3A+Sreejit+%5B+ogMaverick12+%5D;%3E%3E+Mission%3A+Ground+Zero+-%3E+AI+Researcher;%3E%3E+Status%3A+ACTIVE+%5B+PHASE+I+%7C+FOUNDATIONS+%5D;%3E%3E+Origin%3A+DPS+Siliguri%2C+West+Bengal%2C+IN;%3E%3E+WARNING%3A+Extreme+ambition+levels+detected." alt="Typing SVG" />
+<img src="https://readme-typing-svg.demolab.com?font=Share+Tech+Mono&size=16&pause=1200&color=00F0FF&background=00000000&center=true&vCenter=true&width=700&height=45&lines=%3E%3E+Booting+Project+Asteria+v1.0.0...;%3E%3E+Subject%3A+Sreejit+%5B+ogMaverick12+%5D;%3E%3E+Mission%3A+Ground+Zero+-%3E+AI+Researcher;%3E%3E+Status%3A+ACTIVE+%5B+PHASE+I+%7C+FOUNDATIONS+%5D;%3E%3E+Stack%3A+Python+%C2%B7+C%2B%2B+%C2%B7+Mathematics;%3E%3E+WARNING%3A+Extreme+ambition+levels+detected." alt="Typing SVG" />
 
 </div>
 
@@ -34,7 +34,7 @@
 ![Status](https://img.shields.io/badge/STATUS-ACTIVE-00ff41?style=for-the-badge&labelColor=0d0d1a)
 ![Level](https://img.shields.io/badge/LEVEL-CLASS%20XI-ff0080?style=for-the-badge&labelColor=0d0d1a)
 ![Target](https://img.shields.io/badge/TARGET-AI%20RESEARCHER-7b2fff?style=for-the-badge&labelColor=0d0d1a)
-![School](https://img.shields.io/badge/BASE-DPS%20SILIGURI-ffb800?style=for-the-badge&labelColor=0d0d1a)
+![Since](https://img.shields.io/badge/SINCE-2025-ffb800?style=for-the-badge&labelColor=0d0d1a)
 
 </div>
 
